@@ -71,6 +71,7 @@ nav > a {
     color: var(--cor0);
     font-weight: bold;
     margin-top: 30px;
+    max-width: 540px;
 }
 
 nav > a:hover {
