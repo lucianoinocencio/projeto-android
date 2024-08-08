@@ -1,0 +1,212 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kalnia+Glaze:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kalnia+Glaze:wght@100..700&family=MedievalSharp&display=swap');
+
+    :root {
+        --cor0: #c5ebd6;
+        --cor1: #04D939;
+        --cor2: #03A63C;
+        --cor3: #027333;
+        --cor4: #025939;
+        --cor5: #012340;
+
+        --font-padrao: Arial, verdana, Helvetica, sans-serif;
+        --font-destaque: "Bebas Neue", sans-serif;
+        --font-medieval: "MedievalSharp", cursive;
+    }
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    a.externo::after {
+        content: '\00A0\1F517';
+    }
+
+body {
+    font-family: var(--font-padrao);
+    background-color: #c5ebd6;
+    margin: 0px;
+}
+
+    header {
+        background-image: linear-gradient(to bottom, var(--cor2), var(--cor4), var(--cor5));
+        min-height: 150px;
+        text-align: center;
+        padding-top: 28px;
+        padding-bottom: 30px;
+    }
+
+ header > h1 {
+    color: white;
+    font-family: var(--font-destaque);
+    margin-top: 28px;
+    margin-bottom: 17px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px #01182c;
+ }
+
+ header > p {
+    color: white;
+    font-family: var(--font-padrao);
+    font-size: 1.2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 600px;
+    margin: auto;
+    text-shadow: 2px 2px 0px #01182cb0;
+ }
+
+ nav {
+    padding: 10px;
+    box-shadow: 0px 7px 5px #022c52a8;
+    background-color: var(--cor5);
+}
+
+nav > a {
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 30px;
+    color: var(--cor0);
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    background-color: var(--cor2);
+    color: var(--cor4);
+    border-radius: 4px;
+    transition-duration: 0.4s;
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px black;
+    margin-bottom: 30px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+main  h1 {
+    color: var(--cor5);
+    font-family: var(--font-medieval);
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2em;
+}
+
+main h2 {
+    font-family: var(--font-medieval);
+    color: var(--cor4);
+    font-size: 1.4;
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+    text-indent: 8px;
+}
+main p {
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+
+}
+
+main strong {
+    color: var(--cor4);
+    background-color: var(--cor0);
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+main a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor4);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+main a:hover {
+        text-decoration: underline;
+        color: var(--cor3);
+    }
+
+main img {
+        width: 100%;
+} 
+
+main img.pequena {
+    display: block;
+    max-width: 350px;
+    margin: auto;
+}
+
+.video {
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3), var(--cor1));
+    padding-bottom: 56.60%;
+    position: relative;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--cor0);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.315);
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: square;
+    text-decoration: none;
+}
+
+aside > h3 {
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor0));
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    font-family: var(--font-medieval);
+    font-weight: normal;
+    font-size: 1.5em;
+}
+footer {
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer p {
+    color: black;
+    font-weight: bold;
+}
+
+footer a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor5);
+}
