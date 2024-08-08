@@ -115,6 +115,9 @@ main p {
     font-size: 1em;
 
 }
+.nome {
+    white-space: nowrap;
+}
 
 main strong {
     color: var(--cor4);
